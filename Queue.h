@@ -7,8 +7,6 @@
 #ifndef QUEUE_H
 #define QUEUE_H
 
-#include <iostream>
-
 // Treating the end of the array as the front of the line. conscious decision. wanna make executions faster than entering.
 // Kinda like if you have to walk to the end of the line first to actually queue into it
 //  Queue == F.I.F.O.
