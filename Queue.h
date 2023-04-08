@@ -9,8 +9,8 @@
 
 #include <iostream>
 
-// Treating the end of the array as the front of the line. conscious decision. Want to make executions faster than entering.
-// Kind of like if you have to walk to the end of the line first to actually queue into it
+// Treating the end of the array as the front of the line. conscious decision. wanna make executions faster than entering.
+// Kinda like if you have to walk to the end of the line first to actually queue into it
 //  Queue == F.I.F.O.
 template <class T>
 class Queue {
@@ -23,16 +23,16 @@ class Queue {
         void scoot_();
     public:
         Queue();
-        Queue(int& capacity);
+        Queue(const int& capacity);
         Queue(Queue<T>& other);
         ~Queue();
         T& operator=(const Queue<T>& other);
-        void push(T& data);
+        void push(const T& data);
         void pop();
         void clear();
         T& front() const;
         T& back() const;
-        bool contains(T& data) const;
+        bool contains(const T& data) const;
         bool empty() const;
         int capacity() const;
         int size() const;

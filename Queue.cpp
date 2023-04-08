@@ -13,7 +13,7 @@ Queue<T>::Queue() : capacity_(1), size_(0) {
 }
 
 template <class T>
-Queue<T>::Queue(int& capacity) : capacity_(capacity), size_(0) {
+Queue<T>::Queue(const int& capacity) : capacity_(capacity), size_(0) {
     array_ = new T[capacity];
 }
 
@@ -48,7 +48,7 @@ T& Queue<T>::operator=(const Queue<T>& other) {
 *****************************************************************************/
 //Pushes to the beginning of the line, causes scooting.
 template <class T>
-void Queue<T>::push(T& data) {
+void Queue<T>::push(const T& data) {
     if (size_ >= capacity_ - 1) {
         resize_();
     }
@@ -106,7 +106,7 @@ T& Queue<T>::back() const {
     Data Observation
 *****************************************************************************/
 template <class T>
-bool Queue<T>::contains(T& data) const {
+bool Queue<T>::contains(const T& data) const {
     for (int i = 0; i < size_; ++i) {
         if (array_[i] == data) {
             return true;
