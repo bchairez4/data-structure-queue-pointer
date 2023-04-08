@@ -64,7 +64,6 @@ void Queue<T>::push(const T& data) {
 template <class T>
 void Queue<T>::pop() {
     if (empty()) {
-        std::cout<< "The Queue is empty. failed to execute pop." << '\n';
         return;
     }
 
