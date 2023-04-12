@@ -14,7 +14,11 @@ Queue<T>::Queue() : capacity_(1), size_(0) {
 
 template <class T>
 Queue<T>::Queue(const int& capacity) : capacity_(capacity), size_(0) {
-    array_ = new T[capacity];
+    if (capacity_ <= 0) {
+        capacity_ = 1;
+    }
+    
+    array_ = new T[capacity_];
 }
 
 template <class T>
