@@ -1,7 +1,6 @@
 /*****************************************************************************
 *    Brian Chairez                                                           *
 *    Goal: Manual implementation of std::Queue using dynamic arrays.         *
-*    Progess: Basic implementation and functions are complete                *
 *****************************************************************************/
 
 #ifndef QUEUE_H
